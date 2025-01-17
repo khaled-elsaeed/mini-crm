@@ -8,6 +8,7 @@ Mini CRM is a Customer Relationship Management system that helps manage customer
 - MySQL 5.7+
 - Laravel 10.x
 - Composer
+- livewire
 
 
 ## Installation
@@ -30,8 +31,8 @@ php artisan migrate --seed
 php artisan serve
 
 ## admin credentials
-admin@test.com
-Admun123
+admin@gmail.com
+admin123
 
 ## Core Features
 
