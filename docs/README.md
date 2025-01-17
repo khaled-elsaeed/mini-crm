@@ -18,8 +18,6 @@ git clone [repository-url]
 # Install PHP dependencies
 composer install
 
-# Install NPM dependencies
-npm install
 
 # Configure environment
 cp .env.example .env
@@ -30,7 +28,10 @@ php artisan migrate --seed
 
 # Start the development server
 php artisan serve
-```
+
+## admin credentials
+admin@test.com
+Admun123
 
 ## Core Features
 
