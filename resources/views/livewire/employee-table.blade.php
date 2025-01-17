@@ -35,7 +35,7 @@
                     <td>{{ $employee->email }}</td>
                     <td>
                         @if($employee->assignedCustomers->count() > 0)
-                            {{ $employee->assignedCustomers->pluck('name')->join(', ') }}
+                            {{ $employee->assignedCustomers()->where('status', 'active')->pluck('name')->join(', ') }}
                         @else
                             No customers assigned
                         @endif

@@ -137,6 +137,16 @@ class CustomerTable extends Component
                     'password' => Hash::make($this->password)
                 ]);
                 $customer->assignRole('customer');
+
+                // If the authenticated user is an employee, assign the customer to them
+                if (auth()->user()->hasRole('employee')) {
+                    $customer->assignedEmployees()->attach(auth()->id(), [
+                        'status' => 'active',
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ]);
+                }
+
                 $message = 'Customer added successfully!';
             }
 
