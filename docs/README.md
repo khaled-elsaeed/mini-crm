@@ -37,8 +37,8 @@ admin123
 ## Core Features
 
 ### User Management
-- **Roles**: Admin, Employee, Customer
-- **Permissions**: 
+- Roles: Admin, Employee, Customer
+- Permissions: 
   - add-customer
   - edit-customer
   - delete-customer
